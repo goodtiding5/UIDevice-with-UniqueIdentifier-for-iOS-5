@@ -14,5 +14,10 @@ What you need to do:
 
 //Thanks to Erica Sadun for her UIDevice+Hardware Addition (used for the mac address retrieval).
 
+# Improvement
+
+- Fix a bug on the MD5 extension to NSString.
+  The MD5 hash for an empty string (length = 0) should not be nil. (K Zhao)
+
 # License
 see license file.
