@@ -13,9 +13,10 @@
 
 - (NSString *) stringFromMD5{
     
-    if(self == nil || [self length] == 0)
+    if(!self) {
         return nil;
-    
+    }
+
     const char *value = [self UTF8String];
     
     unsigned char outputBuffer[CC_MD5_DIGEST_LENGTH];
